@@ -19,15 +19,15 @@ h1 {
 /*------------------------------------
     SELECT ALL SQUARES IN THE ARRAY
 --------------------------------------*/
-.square:nth-child(-n+4) p{
-    background-image: url("../images/icons/smileyface2.png");
+.container .squares:nth-child(-n+4) {
+    background-image: url("../images/icons/smileyface1.png");
     color: #fff;
     float: left;
     width: 100px;
     height: 100px;
     margin: 5px;
     border: 1px solid black;
-    border-radius:25%;
+    border-radius: 25%;
     cursor: pointer;
     transition: transform .5s ease-in-out;
 }
@@ -35,7 +35,7 @@ h1 {
 /*-------------------------------------------------
     SELECT ALL SQUARES PARAGRAPHS IN THE ARRAY
 ---------------------------------------------------*/
-.container .squares:nth-child(-n+4) p{
+.squares:nth-child(-n+4) p{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif ;
     font-size: 1.5em;
     font-weight: 900;
@@ -44,12 +44,12 @@ h1 {
     text-shadow: 2px 1px 4px rgba(0,0,0, 0.8);
 }
 
-*----------------------------------------------------
+/*----------------------------------------------------
      INDIVIDUALLY SELECT A SQUARE IN THE ARRAY
 -------------------------------------------------------*/
 .squares:nth-child(1) {
     background: #4240ff;
-}    
+}
 
 .squares:nth-child(2) {
     background: #ab3fdd;
@@ -60,20 +60,21 @@ h1 {
 }
 
 .squares:nth-child(4) {
-    background: #00b200 ;
+    background: #00b200
 }
 
-/*-----------------------------------------------------------
-            HOVER, TRANSLATE, & TRANSFORM EFFECTS
--------------------------------------------------------------*/
+/* -----------------------------------------------------------
+    HOVER EFFECTS
+---------------------------------------------------------------*/
 .container .squares:nth-child(-n+4):hover {
-    background-image: url("../images/icons/smileyface1.png"); 
-    transform: scale(.5);
+    background-image: url("../images/icons/smileyface2.png");
+    transform:scale(.5);
     animation-name: race;
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(2.5, .2, .3, 2);
+    animation-timing-function: cubic-bezier(2.5,.2,.3,2);
 }
+
 
 .squares:nth-child(1):hover {
     background: #13b4ff;
@@ -91,13 +92,19 @@ h1 {
     background: #77b800;
 }
 
+.button:hover {
+    background-color:#33FB14;
+    color: #fff;
+    cursor: pointer;
+}
+
 /*-------------------------------------------------------------
       ANIMATION EFFECT
 ---------------------------------------------------------------*/
 @keyframes race {
     0%, 100% {
-        transform: translateY(0px) ;
-        background-image: url("..images/icons/smileyface1.png");
+        transform: translateY(0px);
+        background-image: url("../images/icons/smileyface2.png");
     }
     50% {
         transform: translateY(330px);
