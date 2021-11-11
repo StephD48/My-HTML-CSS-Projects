@@ -1,0 +1,148 @@
+/*=======================================================
+    This is my css for my one_page_website
+=======================================================*/
+/*==================================================
+    GENERIC STYLES
+======================================================*/
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:70%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0,);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    font-size: 16px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.53968254;
+    color: #333;
+    background-color: mintcream;
+}
+
+footer, nav {
+    display: block
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: navy;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
+
+h2 {
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color:mediumblue;
+}
+
+h3 {
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+h4 {
+    padding-top: 30px;
+    line-height: 45px;
+    padding-bottom: 0px;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+p {
+    font-weight: 600;
+    line-height: 25px;
+    padding-bottom: 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.navbar {
+    height: 100px;
+    max-height: 250px;
+    display: block;
+}
+
+
+.wrap {
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    /* This ensures that the images
+      cannot render outside of their container
+      without forcing any scrollbars*/
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    text-align: left;
+}
+
+/*===============================================
+    HOME SECTION STYLES
+===============================================*/
+#home {
+    background: url(../images/thumb2/Italy_11.jfif) no-repeat 50% 50%;
+ background-attachment: fixed; 
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover; 
+ background-size: cover;
+ max-width: 100%;
+ display: block;
+ height: auto;
+ padding-bottom: 500px;
+ padding-top: 350px;
+ color: #fff;
+}
+
+
+/* ================================================================
+    CONTACT STYLES
+===================================================================*/
+.flex-container {
+    display: -webkit-flex;
+    display: block;
+    flex-wrap: wrap;
+    padding: 5px;
+    border-radius: 0px;
+    margin: 0px;
+    background-color: lightgrey;
+    box-shadow: 2px 2px 8px 0 rgba(0,0,0,0.5);
+}
+
+
+#contact {
+    background-color: darkturquoise;
+}
+
+.reservation{
+    width: 60%;
+    padding: 10%;
+
+}
+.reservation input[type="text"] {
+    font-size: 18px;
+    outline: none;
+    font-weight: 600;
+    color:mintcream;
+    padding: 2% 2% 2% 7%;
+    width: 75%;
+    margin: 12px 1em;
+    border-radius: 8px;
+}
