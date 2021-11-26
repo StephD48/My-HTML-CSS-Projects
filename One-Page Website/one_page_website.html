@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Italian Vacations</title>
         <link rel="stylesheet" href="./css/one_page_website.css">
+        <script src="./JS/one_page_website.js" defer></script>
     </head>
     <body>
 
@@ -51,7 +52,7 @@
                     <!--PHOTO CONTAINER 1-->
                     <h1>Take a Gondola Through the Canals of Venice!</h1>
                     <div>
-                            <img src="./images/thumb2/Italy_1.jfif" alt="Venice Canal">
+                            <img src="./images/thumb2/venice.jpg" onclick="openModal();currentSlide(1)" alt="Venice Canal">
                     </div>
                     <!--END PHOTO CONTAINER 1-->
                     
@@ -60,7 +61,7 @@
                         <h1>Bask in the Sun on the Amalfi Coast!</h1>
                         <div>
                             
-                            <img src="./images/thumb2/Italy_3.jfif" alt="Amalfi Coast">
+                            <img src="./images/thumb2/amalficoast.jpg" onclick="openModal();currentSlide(2)" alt="Amalfi Coast">
                               
                         </div>
                     </div>
@@ -71,7 +72,7 @@
                         <h1>See all the wonders of Rome!</h1>
                         <div>
                         
-                            <img src="./images/thumb2/Italy_2.jfif" alt="The Colosseum">
+                            <img src="./images/thumb2/rome.jpg" onclick="openModal();currentSlide(3)" alt="The Colosseum">
                             
                         </div>
                     </div>
@@ -90,7 +91,7 @@
                         <h1>Explore the Hillsides of Tuscany!</h1>
 
                         <div>
-                            <img src="./images/thumb2/Italy_4.jfif" alt="The hills of Tuscany">
+                            <img src="./images/thumb2/tuscany.jpg" onclick="openModal();currentSlide(4)" alt="The hills of Tuscany">
                                     
                         </div>
                     </div>
@@ -101,7 +102,7 @@
                         <h1>Enjoy the Romance of Lake Como!</h1>
 
                         <div>
-                            <img src="./images/thumb2/Italy_7.jfif" alt="Lake Como">
+                            <img src="./images/thumb2/lakecomo.jpg" onclick="openModal();currentSlide(5)" alt="Lake Como">
                             
                         </div>
                     </div>
@@ -109,16 +110,79 @@
                     
                     <!--PHOTO CONTAINER 6-->
                     <div>
-                        <h1>Endulge in the amazing cuisine of Sicily!</h1>
+                        <h1>Indulge in the amazing cuisine of Italian Cuisine!</h1>
 
                         <div>
-                            <img src="./images/thumb2/Italy_9.jfif" alt="Amazing Food in Sicily">
+                            <img src="./images/thumb2/italiancuisine.jpg"onclick="openModal();currentSlide(6)"alt="Amazing Food of Italy">
                             
                         </div>
                     </div>
                     <!--END PHOTO CONTAINER 6-->
 
                 </div>
+                
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+            
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="./images/thumb2/venice.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="./images/thumb2/amalficoast.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="./images/thumb2/rome.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="./images/thumb2/tuscany.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="./images/thumb2/lakecomo.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="./images/thumb2/italiancuisine.jpg" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+            
+            
+                <div class="column">
+                  <img class="demo cursor" src="./images/thumb2/venice.jpg" style="width:100%" onclick="currentSlide(1)" alt="Take a Gondola through the Canals of Venice">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="./images/thumb2/amalficoast.jpg" style="width:100%" onclick="currentSlide(2)" alt="Bask in the sunon the Amalfi Coast">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="./images/thumb2/rome.jpg" style="width:100%" onclick="currentSlide(3)" alt="See the wonders of Rome">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="./images/thumb2/tuscany.jpg" style="width:100%" onclick="currentSlide(4)" alt="Explore the Hillsides of Tuscany">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./images/thumb2/lakecomo.jpg" style="width:100%" onclick="currentSlide(4)" alt="Enjoy the Romance of Lake Como">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./images/thumb2/italiancuisine.jpg" style="width:100%" onclick="currentSlide(4)" alt="Indulge in the amazing cuisine of Sicily">
+                </div>
+              </div>
+            </div>
             </div>
         </section>
         <!--END GALLERY-->
